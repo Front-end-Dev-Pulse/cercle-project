@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cercle-rotated:build:production"
+              "buildTarget": "cercle-rotated:build:production"
             },
             "development": {
-              "browserTarget": "cercle-rotated:build:development"
+              "buildTarget": "cercle-rotated:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cercle-rotated:build"
+            "buildTarget": "cercle-rotated:build"
           }
         },
         "test": {
@@ -101,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e7a23b81-fcdb-4459-b89d-9d6f7ed0a659"
   }
 }
